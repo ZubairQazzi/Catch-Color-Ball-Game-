@@ -1,85 +1,75 @@
 # Color Catch VR
 
-Color Catch VR is a simple reaction and color-recognition game built in Unity for Windows PC and PC VR.
+Color Catch VR is a Unity game for Windows PC and PC VR. The player must catch only the falling balls that match the target color shown on screen and avoid the wrong colors.
 
-Players must catch only the balls that match the target color shown on screen while avoiding the wrong colors. The game becomes harder across 10 levels with faster spawns, higher falling speed, and larger score goals.
+This GitHub repo is only for the playable build. It does not include the full Unity source project, so players can download the game quickly and start playing.
 
-## Game Overview
-
-- Catch the ball only if it matches the target color.
-- Correct catch: `+1`
-- Wrong catch: `-1`
-- Ball touching the ground: no score
-- Complete the level before time runs out
-- Finish all 10 levels to win the game
-
-## Download And Play
-
-To play the game, download `Color Catch XR Share Build.zip` from this repository and extract it.
-
-Important:
-- Keep all build files together in the same folder
-- Do not move only the `.exe` file by itself
-
-Run:
-- `Color Catch XR.exe`
-
-## Files Needed
-
-The playable Windows build includes:
-
-- `Color Catch XR.exe`
-- `Color Catch XR_Data`
-- `MonoBleedingEdge`
-- `UnityPlayer.dll`
-- `UnityCrashHandler64.exe`
-- `dstorage.dll`
-- `dstoragecore.dll`
-- `D3D12`
-
-This repository already includes:
+## What Is In This Repo
 
 - `Color Catch XR Share Build.zip`
+- `README.md`
 
-That zip contains the full playable Windows build.
+`Color Catch XR Share Build.zip` already contains the full Windows playable build.
+
+## How To Download And Play
+
+1. Open this repository on GitHub.
+2. Download `Color Catch XR Share Build.zip`.
+3. Extract the zip file.
+4. Open the extracted folder.
+5. Run `Color Catch XR.exe`.
+
+Important:
+
+- Keep all extracted files together.
+- Do not move only `Color Catch XR.exe` by itself.
+
+## Gameplay Rules
+
+- A target color is shown on the screen.
+- Catch only the ball with the matching target color.
+- Correct catch = `+1`
+- Wrong catch = `-1`
+- Ball touching the ground = no score change
+- Complete the level goal before time ends
+- Finish level 10 to win the full game
 
 ## Controls
 
-### PC Keyboard Mode
+### PC Mode
 
 - `Enter` = Start game / next level
 - `W A S D` = Move left hand
 - `Arrow Keys` = Move right hand
+- `Mouse` = Look around / 360 view
+- `Space` = Catch ball
 - `Esc` = Pause menu
 - `R` = Restart game
 
 ### VR Mode On PC
 
-Connect a VR headset to the PC and make sure the OpenXR runtime is active.
+The same Windows build can also run in VR.
 
-Then run:
+Steps:
 
-- `Color Catch XR.exe`
+1. Connect your VR headset to the PC.
+2. Make sure your OpenXR runtime is active.
+3. Run `Color Catch XR.exe`.
 
-The game can be played in VR using the same Windows build.
+## Game Features
 
-## How To Play
+- 10 levels with increasing difficulty
+- Color-based reaction gameplay
+- PC keyboard play
+- PC VR support through OpenXR
+- Pause menu with resume, restart, main menu, and exit
 
-1. Start the game.
-2. Look at the target color shown on screen.
-3. Catch only balls with the matching color.
-4. Avoid wrong-colored balls.
-5. Reach the level goal before the timer ends.
-6. Press `Enter` to go to the next level after winning.
+## Level Style
 
-## Level Progression
-
-The game contains 10 levels with increasing difficulty.
-
-- Level 1 is a warm-up
-- Levels 2 to 4 are normal difficulty
-- Levels 5 to 7 are challenging
-- Levels 8 to 10 are hard final levels
+- Level 1 = easy warm-up
+- Levels 2 to 4 = normal difficulty
+- Levels 5 to 7 = challenging
+- Levels 8 to 10 = hard final levels
 
 ## Built With
 
@@ -87,7 +77,6 @@ The game contains 10 levels with increasing difficulty.
 - C#
 - OpenXR
 
-## Note
+## Best Download Option
 
-This GitHub upload is for the playable Windows PC / VR build.
-Unity source files are not required for players who only want to download and play the game.
+If someone only wants to play the game, they should download `Color Catch XR Share Build.zip` directly from the repo instead of downloading the full repository as a GitHub zip.
